@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconedinho.png" type="image/x-icon">
+    <title>midias em HTML5</title>
+
+</head>
+<body>
+    <h1>imagem dinamica </h1>
+    <p>tente abrir esse site em varios varios dispositivos diferentes ou simplesmente aumente e diminua seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto G">
+    </picture>
+    <p>(a tag picture permite adcionar varias imagens de tamanhos diferentes, adcione a tag img dps e coloque sua maior foto, dps encima da tag img ,SEMPRE ACIMA, adcione a tag source:media:type e coloque sua imagem média, com max-width com 50 px a mais que a imagem grande, adcione a imagem média, (no source não funciona o atalho ctrl+espaço, tem que digitar o link da imagem média) feito isso, acima a imagem média ,SEMPRE ACIMA, adcione outra tag source:media:type e adcione a imagem pequena sempre com max-width com 50 px a mais que a imagem anterior) (normalmte a imagem grande é de 1000px (para pc e tv) a imagem média é de 700px (para tablet) e a imagem pequena é de 300px (para celular ))</p>
+
+    <h1>reproduzindo audio</h1> 
+    <p>vamos aprender a reproduzir audios com HTML5</p>
+    <audio src="midia/musica.mp3.mp3" controls loop ></audio>
+    <p>(tag audio, use o atalho ctrl+espaço, adcione a musica e use a tag controls dentro da tag audio(tentamos usar a tag autoplay mas não funcionou, é pra começar a tocar sozinho a músic, mas nem o guannabara soube pq, ai adcionamos o controls e funcionou)) (dentro da tag audio e dps de adc a musica pode adc a tag loop para tocar de novo sem o usuario precisar clicar) </p>
+
+    <p>outra forma é usando a tag audio e dps usando a tag source dentro da tag, assi pode carregar o mesmo audio em diferentes formatos, MP3, odd ou wave, usasse o mesmo padrão que usamos nas imagens, carrega com a tag source:src e se coloca todos os formatos, assim o html vai tentrar tocar e ver qual audo é compativel com o navegadr do usuario </p>
+</body>
+</html>
