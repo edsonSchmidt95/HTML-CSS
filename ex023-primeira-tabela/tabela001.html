@@ -7,28 +7,41 @@
     <title>tabela</title>
     <style>
         body{
+           
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: left;
+            vertical-align: top;
+
+            
         }
-        p{
+        .anota > h1{
+            text-align: center;
+        }
+    
+        .anota{
+            margin-top: 20px;
+            margin-left:860px;
+            padding: 20px;
+            border: 2px solid lightgreen;
+            width: fit-content;
+            text-align: justify;
             font-family: monospace;
+            box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.781);
+            background-color: rgba(0, 0, 0, 0.103);
         }
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
-    <p>*anotações</p>
-    <p>table = tabela</p>
-    <p>table row= linha de tabela ( no vs code se usa a tag "tr")</p>
-    <p>table header = cabeçalho de tabela</p>
-    <p>table date= dados de tabela ( no vs code se usa a tag "td")</p>
+   
 <table>
     <tr>
         <td>A1</td>
@@ -52,6 +65,16 @@
     </tr>
 
 </table>
+<div class="anota">
+    <h1>Minha primeira tabela</h1>
+    <p>*anotações</p>
+    <p>table = tabela</p>
+    <p>table row= linha de tabela ( no vs code se usa a tag "tr")</p>
+    <p>table header = cabeçalho de tabela</p>
+    <p>table date= dados de tabela ( no vs code se usa a tag "td")</p>
+    <p>text-align: alinhamento horizontal; <br>
+    vertical-align: alinhameto vertical;</p>
+</div>
     
 </body>
 </html>
