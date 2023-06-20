@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconedinho.png" type="image/x-icon">
+    <title>tabelas</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.582);
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 10px 10px 20px black;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+caption{
+    font-size:1.3em ;
+    font-weight: bold;
+    padding: 10px;
+}
+th{
+    background-color: rgba(105, 105, 105, 0.301);
+    
+}
+td, th {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.nome{
+    background-color: aqua;
+}
+.sexo{
+    background-color: rgba(165, 42, 42, 0.555);
+}
+</style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="3"> 
+        </colgroup>
+        <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">nome</th>
+        <th scope="col">sexo</th>
+        <th scope="col">idade</th>
+        <th scope="col">profissão</th>
+    </tr>
+    <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>jornalista</td>
+    </tr>
+    <tr>
+        <td>Jéssica Maciel</td>
+        <td>F</td>
+        <td>70</td>
+        <td>Enfermeira</td>
+    </tr>
+    <tr>
+        <td>Edson Schmidt</td>
+        <td>M</td>
+        <td>20</td>
+        <td>Uber</td>
+    </tr>
+    <tr>
+        <td>Ioseph</td>
+        <td>m</td>
+        <td>25 </td>
+        <td>CEO</td>
+    </tr>
+    <tr>
+        <td>Axelen</td>
+        <td>F</td>
+        <td>25 </td>
+        <td>Contadora</td>
+    </tr>
+
+    </table>
+    
+</body>
+</html>
