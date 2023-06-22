@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconedinho.png" type="image/x-icon">
+    <title>iframe</title>
+<style>
+iframe{
+  
+}
+.anota{
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid lightgreen;
+    width: 20%;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: auto;
+    text-align: justify;
+    font-family: monospace;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.781);
+    background-color: rgba(0, 0, 0, 0.103);
+}
+</style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com" target="_blank"> cursoemvideo</a>
+        </iframe>
+        para aprender a programar
+    </p>
+    <p>
+        o repositório do Guanabara 
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank"></a>
+        </iframe>
+         tamém é legal
+    </p>
+     <div class="anota">
+        <p>anotações*: <br> o iframe carrega o site, um mini quadro de navegação dentro da tu página. nesse caso, usamos a tag iframe no lugar dda tag "a" de ancoragem, pra criar uma apresentação. <br> nem todos os celulres funcionam com iframe. por isso, dentro da tag (olha no codigo) se coloca a ancora com link normal.</p>
+    </div>
+</body>
+</html>
