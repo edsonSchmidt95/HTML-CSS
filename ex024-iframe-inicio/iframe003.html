@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconedinho.png" type="image/x-icon">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: fit-content;
+            padding: 5px;
+            margin: auto;
+            box-shadow: inset 3px 3px 10px black;
+            
+        }
+        iframe#tela{
+            width:100%;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>se usa o link normal, mas o target se usa o name que colocou no iframe, assim abre a pagin dentro do iframe. </p>
+    <ul>
+        <li><a href="paginas/pag001.html"target="frame">azul</a></li>
+        <li><a href="paginas/pag002.html"target="frame">laranja</a></li>
+        <li><a href="paginas/pag003.html"target="frame">vremelho</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni accusamus minus maxime ullam laboriosam ipsa totam, aperiam optio magnam aliquam error distinctio dolorem nostrum, voluptatum aliquid nemo sequi quidem enim.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic in adipisci ex aspernatur! Facere voluptatibus eaque sapiente itaque aperiam architecto labore corrupti sint fugiat amet? Delectus repellat molestias velit inventore.</p>
+    <iframe src="" id="tela" name="frame">
+        <p>infelizmente seu navegador não é compativel com essa congifuração, acesse pelo link <a href="https://www.instagram.com.br">clique aqui</a></p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores a pariatur quae sed quibusdam fuga labore, expedita itaque error sunt reprehenderit ipsam velit voluptatem dicta? In exercitationem eligendi aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque vel quibusdam adipisci cum dicta, sit nam harum. Nisi, inventore placeat debitis facilis exercitationem molestiae rem laudantium odit quae dolorum.</p>
+</body>
+</html>
