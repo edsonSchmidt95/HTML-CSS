@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .anota{
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            border: 2px solid lightgreen;
+            width: 500px;
+            max-height: 100px;
+            overflow: auto;
+            text-align: justify;
+            font-family: monospace;
+            box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.781);
+            background-color: rgba(0, 0, 0, 0.103);
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuso">usuário:</label>
+            <input type="text" name="uso" id="iuso" required minlength="5" maxlength="15" size="10" placeholder="digite seu nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha" size="6" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="cadastro">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    <div class="anota">
+        <p>quando for usar senha, se usa o input type password, para deixa com os caracteres escondidos <br>já o input reset, é para limpar os dados <br> dentro do input se usa required para dados obrigados <br>dentro do input ainda, podemos confugurar para quantidade minima e maxima de caracteres. minlength" para minimo" e maxlength" para maximo" <br>dentro de input se usa size para determinar o tamnho da caixa <br>dentro no input, se usa tbm placeholder, que fica uma mensagem quase apagada indicando pro usuario o que precisa ser feito</p>
+    </div>
+</body>
+</html>
