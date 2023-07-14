@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .anota{
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            border: 2px solid lightgreen;
+            width: 500px;
+            padding: 10px;
+            max-height: 100px;
+            overflow: auto;
+            text-align: justify;
+            font-family: monospace;
+            box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.781);
+            background-color: rgba(0, 0, 0, 0.103);
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            height:fit-content;
+            width: 30%;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        legend{
+            background-color: rgba(0, 0, 0, 0.24);
+            border-radius: 15%;
+            color: black;
+        }
+       .botao{
+        margin: 20px;
+       }
+    </style>
+</head>
+<body>
+    <h1>teste de checkbox</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sex" id="isexmas" ><label for="isexmas" >masculino</label> <br>
+            <input type="radio" name="sex" id="isexfem"><label for="isexfem">feminino</label>
+        </fieldset>
+       <fieldset>
+        <legend>esportes favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">futebol</label> <br>
+        <input type="checkbox" name="esnat" id="ienat"> <label for="ienat">natação</label> <br>
+        <input type="checkbox" name="esbasq" id="iesbasq" checked> <label for="iesbasq">basquete</label> <br>
+        <input type="checkbox" name="esvolei" id="iesvoei"> <label for="iesvoei">vôlei</label>
+       </fieldset>
+        <div class="botao">
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+    <div class="anota">
+        quando se usa o input type radio, é sempre recomendado deixar o mesmo nome para todas as opções , nom o mesmo, mas o labem tem que ser diferente, assim  só podera selecionar uma, e essa é  diferença entre o radi e o checkbox. radio só pode selecionar um ja p checkboxpode selecionar um, vários ou todos <br> <br>
+        se usa checked quando se quer que um ou mais campos ja estejam selecionado quando o clinte abrir a pagina, um exemplodisso é quanso se tem um checkbox que aceita receber email com promoções do site, normalmente ja esta selecionado, quem faz isso é checked( nesse teste de checkbox usei o checked na opção basquete)
+    <div>
+</body>
+</html>
