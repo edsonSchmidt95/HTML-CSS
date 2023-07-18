@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">estado:</label>
+            <select name="est" id="iest">
+                <option value="">selecione um estado</option>
+                <optgroup label="região sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio De Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+
+                <optgroup label="regão nordeste">
+                    <option value="RN">Rio Grand Do Norte</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="RN">Rio Grande Do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Professor</option>
+                <option >Motorista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imeg">mensagem:</label> <br>
+            <textarea name="meg" id="imeg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
