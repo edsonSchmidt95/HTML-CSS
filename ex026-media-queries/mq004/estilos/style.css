@@ -34,6 +34,14 @@ img{
     display: block;
     margin: auto;
 }
+footer{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: smaller;
+}
 
 img#celular{ display: block;}
 img#tablet{ display: none;}
